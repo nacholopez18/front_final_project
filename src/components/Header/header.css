@@ -1,0 +1,38 @@
+.accountCreate {
+  display: flex;
+  height: 40px;
+  padding-right: 0px;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 24px;
+}
+
+.accountCreateChildTwo {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accountCreateChildTwo h3 {
+  overflow: hidden;
+  color: var(--medios-tonos-gris-5, #26262e);
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.arrowImg {
+  width: 24px;
+  margin-right: 0px;
+}
+
+.accountCreateChildTwo a{
+  width: 24px;
+}

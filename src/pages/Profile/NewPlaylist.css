@@ -1,0 +1,67 @@
+.newPlContainer img {
+  height: 24px;
+  width: 24px;
+}
+.newPlContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 368px;
+  height: 100vh;
+}
+.newPlContainer .settingsTitle {
+  display: flex;
+  padding: 24px 24px 0px;
+}
+.newPlContainer .settingsTitle h3 {
+  display: flex;
+  justify-content: center;
+}
+.newPlContainer .settingsTitle a {
+  width: auto;
+}
+.playlistNameTitle {
+  color: var(--medios-tonos-gris-5, #26262e);
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 138.462% */
+  letter-spacing: 0.5px;
+}
+.playlistName label {
+  color: var(--medios-tonos-gris-5, #26262e);
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.5px;
+}
+.playlistName {
+  display: flex;
+  width: 320px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 32px 24px 20px;
+  flex: 1 1;
+}
+.playlistNameInput {
+  height: 48px;
+  padding: 0px 16px 0px 16px;
+  border-radius: 0px 16px 0px 16px;
+  border: 2px;
+  border: 2px solid var(--medios-tonos-gris-1, #e4e6e8);
+}
+.playlistNameBtn {
+  border: none;
+  background-color: #ff8e0a;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 288px;
+  height: 48px;
+  margin: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+}

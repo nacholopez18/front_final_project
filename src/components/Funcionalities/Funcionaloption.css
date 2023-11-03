@@ -1,0 +1,38 @@
+.optionContainer {
+  display: flex;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  min-width: 320px;
+  max-width: 820px;
+  height: 80px;
+  gap: 12px;
+  border-radius: 0px 24px;
+  margin-bottom: 16px;
+}
+.optionContainer img {
+  border-radius: 0px 0px 0px 24px;
+  width: 87px;
+  height: 80px;
+}
+.optionContainer .optionInsideInfo {
+  display: flex;
+  width: 208px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+.optionContainer h2 {
+  color: #26262e;
+  font-family: Rubik;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+.optionContainer p {
+  color: #45464b;
+  font-family: Rubik;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}

@@ -1,0 +1,84 @@
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 368px;
+  height: 100vh;
+  background-color: white;
+}
+.profileImg {
+  border-radius: 92px;
+  width: 152px;
+  height: 152px;
+  margin: 48px 108px 0px;
+}
+.headerProfileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+/* .SettingsImg, */
+.SettingsBtn {
+  height: 48px;
+  width: 48px;
+  border: none;
+  background: none;
+  position: absolute;
+  top: 50px;
+  right: 15%;
+  translate: 50% 30%;
+}
+.profileName {
+  text-align: center;
+  padding: 16px 24px;
+}
+
+.profileName .profileNameUsername {
+  color: var(--medios-tonos-gris-5, #26262e);
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.5px;
+}
+.dividerProfile {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  gap: 16px;
+  max-width: 492px;
+}
+.dividerProfile a {
+  text-decoration: none;
+}
+
+.labelProfile{
+  text-align: center;
+}
+
+.dividerNewPlaylistDivider {
+  padding: 4px 8px;
+  border-radius: 0px 8px;
+  background: var(--Primario, #ff8e0a);
+  color: white;
+  border: none;
+}
+
+
+.playlistProfileContainer {
+  max-width: 492px;
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.coverSectionProfile {
+  text-align: center;
+  width: 152px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+align-items: center;
+}

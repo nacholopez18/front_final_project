@@ -1,0 +1,22 @@
+.EmptyPlaylistContainer img {
+  height: 24px;
+  width: 24px;
+}
+.EmptyPlaylistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 368px;
+  height: 100vh;
+}
+.EmptyPlaylistContainer .settingsTitle {
+  display: flex;
+  padding: 24px 24px 0px;
+}
+.EmptyPlaylistContainer .settingsTitle h3 {
+  display: flex;
+  justify-content: center;
+}
+.EmptyPlaylistContainer .settingsTitle a {
+  width: auto;
+}

@@ -1,0 +1,43 @@
+.imgError{
+    margin: auto;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titleError h1{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.textError{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+.errorStatus{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+
+.errorExit{
+    position: fixed;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.errorExit a{
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+    color: orange;
+}

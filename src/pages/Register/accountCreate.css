@@ -1,0 +1,109 @@
+.inputDivMail {
+  margin-bottom: 46px;
+}
+
+.accountCreateContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 820px;
+  margin: auto;
+}
+
+/* .btnCreateAccount {
+  position: relative;
+  top: 80px;
+  margin: auto;
+  bottom: 0px;
+  display: flex;
+  width: 320px;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+} */
+
+.termsAndConditions {
+  margin-top: 17px;
+}
+
+.inputCheck {
+  width: 22px;
+  height: 22px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border: 3px solid var(--medios-tonos-gris-2, #bfc0c1);
+}
+
+.btnMain3 {
+  position: absolute;
+  bottom: 0px;
+  margin: 0 auto;
+  border: none;
+  background-color: #ff8e0a;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 288px;
+  height: 48px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+}
+
+.disabledBottom2 {
+  position: absolute;
+  bottom: 0px;
+  margin: auto;
+  border-radius: 0px 16px;
+  background: var(--medios-tonos-gris-1, #e4e6e8);
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 288px;
+  height: 48px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  border: none;
+}
+
+.containerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.available {
+  color: var(--semntico-afirmacin, #03a400);
+  /* Body/Body Very Small - 12px/Medium */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.busy {
+  color: var(--semntico-error, #ea0f0f);
+  /* Body/Body Very Small - 12px/Medium */
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+.normalLabel {
+  color: rgb(0, 0, 0);
+}
+
+.errorLabel {
+  color: red;
+}

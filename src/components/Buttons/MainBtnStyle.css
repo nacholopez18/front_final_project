@@ -1,0 +1,13 @@
+.btnMain {
+  border: none;
+  background-color: #ff8e0a;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  width: 288px;
+  height: 48px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+}

@@ -1,0 +1,116 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.childContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+  flex: 1 1;
+}
+.formLayout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1;
+}
+.formLayout h1 {
+  margin-bottom: 16px;
+}
+.formLayout select {
+  margin-bottom: 24px;
+}
+.inputMain {
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  border-radius: 0px 16px;
+  border: 2px solid var(--medios-tonos-gris-5, #26262e);
+  display: flex;
+  align-items: center;
+  justify-content: stretch;
+  width: 288px;
+  height: 48px;
+  color: var(--medios-tonos-gris-2, #bfc0c1);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: left;
+}
+.backArrow {
+  display: flex;
+  width: 24px;
+  padding-right: 0px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.selectContaiener {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.genderBox span {
+  position: relative;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  text-align: center;
+  background-color: transparent;
+  font-size: 16px;
+  border: 2px solid  #26262e;
+  padding: 8px;
+}
+
+.checkClass {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  height: 0px;
+  width: 0px; 
+}
+.genderBox input:checked + span {
+  background: #26262E;
+  color: white;
+  
+}
+.colorType {
+  color: black;
+}
+.containGender{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 12px;
+  flex: 1 0;
+  margin-bottom: 20px;
+}
+.containGender > div{
+  width: auto;
+}
+.containerInput{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.buttonGender{
+  margin-top: auto;
+}
+.textHeader{
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}

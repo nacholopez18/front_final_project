@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Rubik,sans-serif;
+  width: 100%; 
+  .swal2-container .swal2-html-container{
+    margin: 1.6em 0.3em;
+  } 
+}
+/* cambiar a 100vw */

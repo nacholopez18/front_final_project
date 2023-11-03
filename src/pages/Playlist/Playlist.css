@@ -1,0 +1,182 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.headerBox {
+  height: 24px;
+  flex-shrink: 0;
+  align-self: stretch;
+  color: var(--medios-tonos-gris-5, #26262E);
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Headings/Heading 5 - 16px/Medium */
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.5px;
+}
+
+
+.coverStyles {
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+}
+.coverRaw {
+  width: 112px;
+  height: 112px;
+  flex-shrink: 0;
+  border-radius: 0px 32.941px 0px 0px;
+}
+
+.coverSection {
+  width: 224px;
+  height: 224px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.logoDiv {
+  display: flex;
+  width: 316px;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25.5px;
+}
+
+.logoSmall {
+  width: 24px;
+  height: 24.001px;
+  flex-shrink: 0;
+}
+
+.verifiedStyle {
+  width: 24px;
+  height: 24.001px;
+  flex-shrink: 0;
+}
+.shareStyle {
+  width: 24px;
+  height: 24.001px;
+  flex-shrink: 0;
+}
+.vectorStyle {
+  width: 14.667px;
+  height: 14.667px;
+  gap: 8px;
+}
+.time {
+  text-align: right;
+  font-size: 14px;
+}
+.playButton {
+  width: 48px;
+  height: 48px;
+}
+.shuffle {
+  width: 24px;
+  height: 24px;
+}
+.makeCopy {
+  width: 24px;
+  height: 24px;
+}
+
+.logoDiv2 {
+  display: flex;
+  width: 316px;
+  display: flex;
+  width: 320px;
+  align-items: center;
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 25.5px;
+}
+.copyText {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.songImage{
+  width: 48px;
+height: 48px;
+}
+
+.cardStyle div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerMap{
+  max-width: 320px;
+}
+
+.iconHeaderRight{
+  width: 24px;
+  height: 24px;
+ margin-top: 23px ;
+  
+}
+.iconRight{
+  width: 24px;
+  height: 24px;
+  
+}
+.flexDiv{
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.songName{
+  height: 18px;
+flex: 1 0 0;
+color: var(--medios-tonos-gris-5, #26262E);
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 21px; 
+letter-spacing: 0.5px;
+
+
+}
+.artistName{
+  height: 18px;
+  align-self: stretch;
+  overflow: hidden;
+color: var(--medios-tonos-gris-3, #838486);
+text-overflow: ellipsis;
+white-space: nowrap;
+font-family: Rubik;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px; 
+letter-spacing: 0.5px;
+
+
+}
+

@@ -1,0 +1,166 @@
+.searchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 368px;
+  height: 100vh;
+}
+.topTwentyRender {
+  min-width: 320px;
+  max-width: 820px;
+  display: flex;
+  overflow: auto;
+  flex-wrap: wrap;
+}
+.songsTopTwenty {
+  min-width: 320px;
+  max-width: 820px;
+  justify-content: center;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-bottom: 96px;
+}
+
+.searchTitle {
+  color: #26262e;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.5px;
+}
+.searchBarInput {
+  position: relative;
+  min-width: 320px;
+  max-width: 820px;
+}
+.searchBarInput input {
+  padding-left: 52px;
+  border: 2px solid #bfc0c1;
+  border-radius: 0px 16px;
+  height: 48px;
+}
+.searchBarInput input::placeholder {
+  color: #bfc0c1;
+  font-family: Rubik;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+.searchBarInput .imgInputSearchbar {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  translate: 50% -50%;
+}
+.searchBarInput .imgInputGoBack {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  translate: -50% -50%;
+}
+.divider {
+  min-width: 320px;
+  max-width: 820px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.divider hr {
+  width: auto;
+  flex-grow: 1;
+}
+
+.divider .subTitleSearch {
+  width: auto;
+}
+.topTwentyRenderSong {
+  width: 152px;
+  text-align: center;
+}
+.topTwentyRenderSong img {
+  width: 152px;
+  height: 152px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+.suggestionList,
+.recentSeachList {
+  min-width: 320px;
+  max-width: 820px;
+  overflow-y: auto;
+  flex: 1 1;
+}
+.recentSearchList {
+  min-width: 320px;
+  max-width: 820px;
+  overflow-y: auto;
+  flex: 1 1;
+}
+
+.searchResultsContainer {
+  min-width: 320px;
+  max-width: 820px;
+  overflow-y: auto;
+  flex: 1 1;
+}
+.recentSearchList .recentSearchSuggestion {
+  display: flex;
+  height: 48px;
+  gap: 8px;
+  padding: 14px 24px;
+  margin-bottom: 8px;
+  background: none;
+  border: none;
+}
+
+.suggestionItem,
+.recentSerach {
+  display: flex;
+  height: 48px;
+  gap: 8px;
+  padding: 14px 24px;
+  margin-bottom: 8px;
+}
+.searchResultsContainer .suggestionItem .deleteSearchImg {
+  width: 24px;
+  height: 24px;
+}
+
+.recentSearchSuggestion img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.suggestionItem img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  margin-right: 16px;
+}
+.topTwName {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+.topTwArtist {
+  color: var(--medios-tonos-gris-3, #838486);
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+}
+
+.searchHeader {
+  padding: 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 320px;
+  max-width: 820px;
+}

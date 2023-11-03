@@ -1,0 +1,92 @@
+.logo {
+  width: 207.64px;
+  height: 72px;
+  position: absolute;
+  top: 176px;
+  left: 80px;
+  background-color: #26262e;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.logoImage {
+  width: 207.639px;
+  height: 72px;
+  flex-shrink: 0;
+  margin-top: 176px;
+}
+
+.container {
+  width: 100%;
+  background-image: linear-gradient(
+      0deg,
+      white,
+      rgba(253, 254, 255, 0.6) 50%,
+      rgba(248, 177, 95, 0.65) 85%,
+      rgba(252, 154, 42, 0.9) 100%
+    ),
+    url("/public/Gif_Auden.gif");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  position: relative;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(253, 254, 255, 0) 0%,
+    #fdfeff 45.83%,
+    #fdfeff 100%
+  );
+  width: 368px;
+  height: 338px;
+  flex-shrink: 0;
+}
+
+.lettersMid {
+  width: 196px;
+  height: 31px;
+  color: var(--medios-tonos-gris-5, #26262e);
+  text-align: center;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.794px;
+  width: 100%;
+  justify-self: stretch;
+  margin-top: 23.67px;
+}
+
+.flexContainer {
+  min-width: 368px;
+  text-align: center;
+  margin: auto;
+}
+
+.logInSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logIn {
+  border: none;
+  background-color: transparent;
+  margin-top: 92px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.lettersMid {
+  margin-bottom: 15%;
+}
