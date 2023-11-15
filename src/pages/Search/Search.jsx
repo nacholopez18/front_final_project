@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 function Search() {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [topSongs, setTopSongs] = useState([]);
   const [songs, setSongs] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
@@ -35,18 +35,14 @@ function Search() {
     const storedSearch = JSON.parse(localStorage.getItem("recentSearch")); //recentSearch es identificador
     if (storedSearch) {
       setRecentSearch(storedSearch);
-      console.log(storedSearch);
     }
   }, [showSearch]);
 
   const saveRecentSearchToLocalStorage = (searchData) => {
     localStorage.setItem("recentSearch", JSON.stringify(searchData));
-    console.log(searchData);
   };
 
   const saveRecentSearch = (suggestion) => {
-    console.log(suggestion);
-    console.log(recentSearch);
     if (recentSearch.length <= 4) {
       setRecentSearch([...recentSearch, suggestion]);
     } else {
@@ -116,9 +112,9 @@ function Search() {
     setSearchTerm(value);
   };
 
-  const clearInput = () =>{
-    setSearchTerm("")
-  }
+  const clearInput = () => {
+    setSearchTerm("");
+  };
 
   let content1;
   let content = () => (
@@ -188,7 +184,10 @@ function Search() {
     <>
       <div className="searchContainer">
         <SearchHeader
-          onDiscardSearch={() =>{ setShowSearch(false); clearInput()}}
+          onDiscardSearch={() => {
+            setShowSearch(false);
+            clearInput();
+          }}
           onSearchChange={(e) => searchSong(e)}
           onSearchFocus={() => setShowSearch(true)}
           showSearch={showSearch}

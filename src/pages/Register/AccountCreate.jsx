@@ -6,7 +6,7 @@ import MainBtn from "../../components/Buttons/MainBtn";
 import { useState, useEffect } from "react";
 import { userData, usernameVerify } from "../../../API/userData_API";
 import { useNavigate } from "react-router-dom";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 
 function AccountCreate() {
   const navigate = useNavigate();
@@ -35,7 +35,7 @@ function AccountCreate() {
 
   const verifyUser = async () => {
     const validUser = user;
-    console.log("Verifying user");
+
     try {
       await usernameVerify(validUser);
       setUserInvalid(false);
@@ -78,7 +78,6 @@ function AccountCreate() {
     }
   };
 
- 
   const isValidPassword = (password) => {
     return /^(?=.*[A-Z])(?=.*\d)(?=.*\W).{8,}$/.test(password);
   };
@@ -109,8 +108,7 @@ function AccountCreate() {
     const dataToSend = { username: user, password: password, email: email };
 
     if (
-      (
-        userError ||
+      (userError ||
         email.trim() === "" ||
         passwordError ||
         password.trim() === "") &&
@@ -123,14 +121,14 @@ function AccountCreate() {
         navigate("/login");
       } catch (error) {
         Swal.fire({
-          title: 'Error',
+          title: "Error",
           text: error,
-          icon: 'error', 
-          confirmButtonColor: 'orange',
-          confirmButtonText: 'Aceptar',
+          icon: "error",
+          confirmButtonColor: "orange",
+          confirmButtonText: "Aceptar",
           customClass: {
-            title: 'font-small', 
-            text: 'font-small'   
+            title: "font-small",
+            text: "font-small",
           },
         });
       }
@@ -181,9 +179,9 @@ function AccountCreate() {
               )}
             </div>
             <div>
-            <label style={{ color: passwordError ? "red" : "black" }}>
-              Contraseña
-            </label>
+              <label style={{ color: passwordError ? "red" : "black" }}>
+                Contraseña
+              </label>
 
               <div className="inputMail">
                 <InputPassword

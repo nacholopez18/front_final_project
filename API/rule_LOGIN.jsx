@@ -6,9 +6,7 @@ export const usernameVerify = async (usernameValue) => {
     const response = await api.get(url);
     return response.data;
   } catch (error) {
-    throw (
-      error.response.data.error
-    );
+    throw error.response.data.error;
   }
 };
 
@@ -18,9 +16,7 @@ export const emailVerify = async (emailValue) => {
     const response = await api.get(url);
     return response.data;
   } catch (error) {
-    throw (
-      error.response.data.error
-    );
+    throw error.response.data.error;
   }
 };
 
@@ -31,8 +27,6 @@ export const passwordVerify = async (user) => {
     const response = await api.post(url, user);
     return response.data;
   } catch (error) {
-    throw (
-      error.response.data.error
-    );
+    throw error.response.data.error;
   }
 };

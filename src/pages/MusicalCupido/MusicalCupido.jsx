@@ -16,8 +16,7 @@ function MusicalCupido() {
   const [imgSelected, setImgSelected] = useState(null);
   const [imgView, setImgSView] = useState([]);
   const [nextImg, setNextImg] = useState(null);
-  const [totalContainerHidden, setTotalContainerHidden] = useState(true)
-
+  const [totalContainerHidden, setTotalContainerHidden] = useState(true);
 
   const touchStartX = useRef(null);
 
@@ -97,8 +96,6 @@ function MusicalCupido() {
     }
   };
 
- 
-
   const musicSelected = () => {
     const currentSongId = songs[currentSongIndex].artist_id;
 
@@ -110,8 +107,6 @@ function MusicalCupido() {
 
     setImgSView((imgView) => [...imgView, imgSelected]);
   };
-
-  console.log(imgView);
 
   const handleLikeClickLike = () => {
     if (songs.length > 0) {
@@ -127,10 +122,6 @@ function MusicalCupido() {
     styleOfButton();
     musicSelected();
   };
-
-
-
-  console.log("Liked Song:", dataToSend);
 
   const handleLikeClickDontLike = () => {
     if (songs.length > 0) {
@@ -162,10 +153,8 @@ function MusicalCupido() {
     }
   };
 
-  
   return (
     <div className="containerCupido">
-
       <div
         style={{
           display: totalContainerHidden ? "flex" : "none",
@@ -181,23 +170,30 @@ function MusicalCupido() {
         </div>
 
         <div className="textPopUp">
-          <p>Luego de al menos 2 me gusta, confirma tu selección y crearemos una playlist rápida con los artistas que fueron un match.</p>
+          <p>
+            Luego de al menos 2 me gusta, confirma tu selección y crearemos una
+            playlist rápida con los artistas que fueron un match.
+          </p>
         </div>
 
         <div className="containerButtonPopUp">
-          <button onClick={handleContainer} className="buttonOkPopUp">Entendido</button>
+          <button onClick={handleContainer} className="buttonOkPopUp">
+            Entendido
+          </button>
         </div>
 
         <div className="containerA">
-          <a onClick={handleContainer} className="aNoPopUp">No volver a Mostrar</a>
+          <a onClick={handleContainer} className="aNoPopUp">
+            No volver a Mostrar
+          </a>
         </div>
-
       </div>
 
       <div
         style={{
           display: totalContainerHidden ? "none" : "block",
-        }}>
+        }}
+      >
         <header>
           <Header title="Cupido Musical"></Header>
         </header>
@@ -209,7 +205,6 @@ function MusicalCupido() {
             onTouchEnd={handleTouchEnd}
           >
             <div className="carouselItem">
-
               <form onSubmit={handleSubmit} action="">
                 {songs[currentSongIndex] && (
                   <>
@@ -229,7 +224,10 @@ function MusicalCupido() {
                         <div onClick={handleLikeClickLike} className="like">
                           <img src="/icon/like.svg" alt="" />
                         </div>
-                        <div onClick={handleLikeClickDontLike} className="cross">
+                        <div
+                          onClick={handleLikeClickDontLike}
+                          className="cross"
+                        >
                           <img src="/icon/cross.svg" alt="" />
                         </div>
                       </div>

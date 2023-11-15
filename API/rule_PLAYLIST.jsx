@@ -8,8 +8,6 @@ export const actualPlaylist = async (token) => {
     });
     return response.data;
   } catch (error) {
-    throw (
-      error.response.data.error 
-    );
+    throw error.response.data.error;
   }
 };

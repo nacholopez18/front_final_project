@@ -24,7 +24,7 @@ const ContextualMusic = () => {
   const [idGender, setIdGender] = useState([]);
   const [idWeather, setIdWeather] = useState("");
   const token = localStorage.getItem("token");
-  const [totalContainerHidden, setTotalContainerHidden] = useState(true)
+  const [totalContainerHidden, setTotalContainerHidden] = useState(true);
 
   useEffect(() => {
     if (!token) {
@@ -35,7 +35,6 @@ const ContextualMusic = () => {
   const handleContainer = () => {
     setTotalContainerHidden(!totalContainerHidden);
   };
-
 
   const getActivity = async () => {
     try {
@@ -120,7 +119,6 @@ const ContextualMusic = () => {
 
   const toggleGender = (index) => {
     const newState = [...gender];
-    console.log(newState);
     const currentSatus = gender[index].status;
     if (!currentSatus) {
       const activeCount = gender.filter((c) => c.status).length;
@@ -142,8 +140,6 @@ const ContextualMusic = () => {
     setIdGender(selectedGender);
     setGender(newState);
   };
-
-
 
   const handleActivity = (e) => {
     setIdActivity(e.target.value);
@@ -167,13 +163,13 @@ const ContextualMusic = () => {
       gender: idGender,
     };
 
-    console.log("Guardando en el LocalStorage:", dataToSend);
+    // console.log("Guardando en el LocalStorage:", dataToSend);
     localStorage.setItem("ContextualMusic", JSON.stringify(dataToSend));
-    console.log("Guardado en el LocalStorage exitosamente.");
+    // console.log("Guardado en el LocalStorage exitosamente.");
 
     try {
       await contextualMusic(dataToSend, token);
-      navigate("/Playlistcontextual")
+      navigate("/Playlistcontextual");
     } catch (error) {
       Swal.fire({
         title: "Error",
@@ -187,7 +183,6 @@ const ContextualMusic = () => {
         },
       });
     }
-    
   };
 
   useEffect(() => {
@@ -197,44 +192,50 @@ const ContextualMusic = () => {
     getGender();
   }, []);
 
-  console.log(gender);
-
   return (
     <>
       <main className="mainContainer">
-      <div
-        style={{
-          display: totalContainerHidden ? "flex" : "none",
-        }}
-        className="popUp"
-      >
-        <div className="titlePopUp">
-          <h3>Música Contextual</h3>
+        <div
+          style={{
+            display: totalContainerHidden ? "flex" : "none",
+          }}
+          className="popUp"
+        >
+          <div className="titlePopUp">
+            <h3>Música Contextual</h3>
+          </div>
+
+          <div className="imgPopUp">
+            <img src="/contextual-pop-up.svg" alt="" />
+          </div>
+
+          <div className="textPopUp">
+            <p>
+              Llena cuantos campos quieras y crearemos una playlist en base a
+              tus respuestas.
+            </p>
+          </div>
+
+          <div className="containerButtonPopUp">
+            <button onClick={handleContainer} className="buttonOkPopUp">
+              Entendido
+            </button>
+          </div>
+
+          <div className="containerA">
+            <a onClick={handleContainer} className="aNoPopUp">
+              No volver a Mostrar
+            </a>
+          </div>
         </div>
 
-        <div className="imgPopUp">
-          <img src="/contextual-pop-up.svg" alt="" />
-        </div>
-
-        <div className="textPopUp">
-          <p>Llena cuantos campos quieras y crearemos una playlist en base a tus respuestas.</p>
-        </div>
-
-        <div className="containerButtonPopUp">
-          <button onClick={handleContainer} className="buttonOkPopUp">Entendido</button>
-        </div>
-
-        <div className="containerA">
-          <a onClick={handleContainer} className="aNoPopUp">No volver a Mostrar</a>
-        </div>
-
-      </div>
-
-        <div className="childContainer" 
-        style={{
-          display: totalContainerHidden ? "none" : "flex",
-        }}>
-          <Header className='textHeader' title="Musica Contextual"></Header>
+        <div
+          className="childContainer"
+          style={{
+            display: totalContainerHidden ? "none" : "flex",
+          }}
+        >
+          <Header className="textHeader" title="Musica Contextual"></Header>
 
           <form onSubmit={handleSubmit} className="formLayout">
             <h1>¿Cúal es la ocasión?</h1>
@@ -247,11 +248,14 @@ const ContextualMusic = () => {
                 Actividad
               </option>
               {activity.map((n) => (
-                <option  className="colorType" key={n.id_activity} value={n.id_activity}>
+                <option
+                  className="colorType"
+                  key={n.id_activity}
+                  value={n.id_activity}
+                >
                   {n.type}
                 </option>
               ))}
-              {console.log(activity.id_activity)}
             </select>
 
             <h1>¿Cómo te sientes?</h1>
@@ -259,9 +263,9 @@ const ContextualMusic = () => {
             <select onChange={handleMood} id="opciones" className="inputMain">
               <option value="" disabled selected hidden>
                 Estado de Animo
-              </option >
+              </option>
               {mood.map((n) => (
-                <option  className="colorType" key={n.id_mood} value={n.id_mood}>
+                <option className="colorType" key={n.id_mood} value={n.id_mood}>
                   {n.type}
                 </option>
               ))}
@@ -277,7 +281,11 @@ const ContextualMusic = () => {
                 Clima
               </option>
               {weather.map((n) => (
-                <option   className="colorType" key={n.id_weather} value={n.id_weather}>
+                <option
+                  className="colorType"
+                  key={n.id_weather}
+                  value={n.id_weather}
+                >
                   {n.type}
                 </option>
               ))}
@@ -302,9 +310,12 @@ const ContextualMusic = () => {
                 </div>
               ))}
             </div>
-     
-              <MainButton className="buttonGender" type="submit" text="Crear Playlist"></MainButton>
-      
+
+            <MainButton
+              className="buttonGender"
+              type="submit"
+              text="Crear Playlist"
+            ></MainButton>
           </form>
         </div>
       </main>

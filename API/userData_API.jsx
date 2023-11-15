@@ -27,7 +27,7 @@ export const usernameVerify = async (usernameValue) => {
 };
 
 export const getUserPlaylists = async (token) => {
-  let url = `/dataUser`;
+  let url = `https://final-back-project.vercel.app/api/dataUser`;
 
   try {
     const result = await api.get(url, {
@@ -39,4 +39,3 @@ export const getUserPlaylists = async (token) => {
     throw error.response.data.error;
   }
 };
-

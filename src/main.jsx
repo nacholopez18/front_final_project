@@ -17,7 +17,6 @@ import Settings from "./pages/Profile/Settings";
 import NewPlaylist from "./pages/Profile/NewPlaylist";
 import ErrorPage from "./pages/Error/PageError";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -76,12 +75,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/Playlistcontextual",
-    element: <PlaylistContextual/>,
+    element: <PlaylistContextual />,
     errorElement: <ErrorPage></ErrorPage>,
   },
   {
     path: "/Playlistcupido",
-    element: <PlaylistCupido/>,
+    element: <PlaylistCupido />,
     errorElement: <ErrorPage></ErrorPage>,
   },
 ]);
